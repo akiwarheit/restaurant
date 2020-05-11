@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "menu": {
+      "model": "menu"
+    },
+    "Photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal",
+      "default": 10
+    }
+  }
+}
