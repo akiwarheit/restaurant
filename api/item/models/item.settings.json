@@ -32,6 +32,9 @@
     "Price": {
       "type": "decimal",
       "default": 10
+    },
+    "Options": {
+      "type": "json"
     }
   }
 }
