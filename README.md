@@ -1,3 +1,3 @@
-# Strapi application
+# Restaurant
 
-A quick description of your strapi application
+CMS for managing menu & item + REST API for our mobile app. Powered by Strapi.
